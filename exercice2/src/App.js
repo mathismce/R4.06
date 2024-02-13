@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Card from './components/card';
+
+let offer = {
+  name:"Débutant",
+  price:"29 999",
+  adv: [
+    { isChecked:true, name: "Edouard Jérémie" },
+    { isChecked:true, name: "Amélie Christelle"}, 
+    { isChecked:false, name: "Gilles Damien"}
+],
+  direction:"dejdefd",
+  btn: "Get Started"
+
+
+};
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Card {...offer}/>
     </div>
   );
 }
