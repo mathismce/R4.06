@@ -13,7 +13,7 @@ function Advantage({ name, isChecked }) {
     else {
         return (
             <>
-                <span class="advantage__notcheckmark">✓</span>
+                <span class="advantage__checkmark"> &nbsp;</span>
                 <p class="advantage__text">{name}</p>
             </>
             
