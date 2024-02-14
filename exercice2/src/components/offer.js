@@ -8,15 +8,16 @@ export default function Page(page) {
         <div class="offer">
             <div class="offer-section">
                 <h2 class="offer-section__title">{page.title}</h2>
-                <p class="offer-section__description">{page.description}</p><div class="offer-section">
-                <h2 class="offer-section__title">{page.title2}</h2>
-                <p class="offer-section__description">{page.description2}</p>
+                <p class="offer-section__description">{page.description}</p>
+                <div class="box">
+                    {page.offers.map((offer, index) => (
+                    <div key={index}>
+                        <Card name={offer.name} price={offer.price} adv={offer.adv} direction={offer.direction} btn={offer.btn} />
+                    </div>
+                ))}
                 </div>
-                {page.offers.map((offer, index) => (
-                        <li key={index}>
-                        <Card name={offer.name} price={offer.price} adv={offer.adv} direction={offer.direction} button={offer.btn} /></li>
-                    ))}
-            </div>    
+                
+            </div>
         </div>
 
     );
