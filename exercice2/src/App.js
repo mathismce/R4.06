@@ -9,7 +9,7 @@ let page = {
   offers: [
     {
       name: "Starter Package",
-      price: "29 999.99",
+      price: {buy:"29 999.99", leasing: "299.99"},
       adv: [
         { isChecked: true, name: "Assurance auto complémentaire" },
         { isChecked: true, name: "Première recharge offerte" },
@@ -27,7 +27,7 @@ let page = {
     },
     {
       name: "Premium Package",
-      price: "35 999.99",
+      price: {buy:"39 999.99", leasing: "399.99"},
       adv: [
         { isChecked: true, name: "Assurance auto complémentaire" },
         { isChecked: true, name: "Première recharge offerte" },
@@ -45,7 +45,7 @@ let page = {
     },
     {
       name: "Prestige Package",
-      price: "49 999.99",
+      price: {buy:"49 999.99", leasing: "499.99"},
       adv: [
         { isChecked: true, name: "Assurance auto complémentaire" },
         { isChecked: true, name: "Première recharge offerte" },
